@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Rodriguez Construction Services</title>
+<meta name="description" content="Get a free quote from Rodriguez Construction Services. Serving LA, Orange, San Bernardino & Riverside Counties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-mark">RCS</span>
+      <span class="nav-logo-text">RODRIGUEZ<br>CONSTRUCTION</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Get a Quote</a>
+    <button class="nav-burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <p class="section-kicker">Get In Touch</p>
+    <h1>Let's talk about your project.</h1>
+    <p>Tell us what you're planning and we'll follow up with a free quote.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-grid">
+
+    <form class="contact-form reveal" id="leadForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="project">Project Type</label>
+          <select id="project" name="project_type" required>
+            <option value="">Select one...</option>
+            <option>ADU Addition</option>
+            <option>New Construction</option>
+            <option>Remodel</option>
+            <option>Additions / Framing</option>
+            <option>Concrete / Repairs</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="budget">Budget Range</label>
+          <select id="budget" name="budget_range">
+            <option value="">Select one...</option>
+            <option>Under $25,000</option>
+            <option>$25,000 – $75,000</option>
+            <option>$75,000 – $150,000</option>
+            <option>$150,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="message">Tell us about your project</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg form-submit">Send Request</button>
+      <p class="form-success" id="formSuccess">Thanks — we got your request and will be in touch shortly.</p>
+    </form>
+
+    <div class="contact-info reveal">
+      <div class="contact-info-block">
+        <p class="section-kicker">Call or Email</p>
+        <a href="tel:9513999575" class="contact-big-link">(951) 399-9575</a>
+        <a href="mailto:RodriguezConstructionServices0@gmail.com" class="contact-big-link small">RodriguezConstructionServices0@gmail.com</a>
+      </div>
+      <div class="contact-info-block">
+        <p class="section-kicker">Service Area</p>
+        <p class="contact-area">LA County<br>Orange County<br>San Bernardino County<br>Riverside County</p>
+      </div>
+      <div class="contact-info-block">
+        <p class="section-kicker">Licensed &amp; Insured</p>
+        <p class="contact-area">CSLB License #1126344</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="nav-logo-mark">RCS</span>
+      <p>Rodriguez Construction Services<br>Born to work hard.</p>
+    </div>
+    <div class="footer-contact">
+      <p><a href="tel:9513999575">(951) 399-9575</a></p>
+      <p><a href="mailto:RodriguezConstructionServices0@gmail.com">RodriguezConstructionServices0@gmail.com</a></p>
+      <p>CSLB License #1126344</p>
+    </div>
+  </div>
+  <p class="footer-legal">&copy; 2026 Rodriguez Construction Services. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
