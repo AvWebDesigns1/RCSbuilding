@@ -50,14 +50,14 @@ if (baSlider) {
   baSlider.addEventListener('touchmove', (e) => { if (dragging) setSlider(e.touches[0].clientX); }, { passive: true });
   baSlider.addEventListener('touchend', () => dragging = false);
 
-  // gentle auto-demo on load: slide to 60% then settle back to 40% (better for mobile)
+  // gentle auto-demo on load: slide to 55% then settle back to 35% (more before showing on mobile)
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     setTimeout(() => {
       baBefore.style.transition = 'width 1.1s ease-in-out';
       baHandle.style.transition = 'left 1.1s ease-in-out';
-      setSlider(baSlider.getBoundingClientRect().left + baSlider.getBoundingClientRect().width * 0.60);
+      setSlider(baSlider.getBoundingClientRect().left + baSlider.getBoundingClientRect().width * 0.55);
       setTimeout(() => {
-        setSlider(baSlider.getBoundingClientRect().left + baSlider.getBoundingClientRect().width * 0.40);
+        setSlider(baSlider.getBoundingClientRect().left + baSlider.getBoundingClientRect().width * 0.35);
         setTimeout(() => {
           baBefore.style.transition = '';
           baHandle.style.transition = '';
